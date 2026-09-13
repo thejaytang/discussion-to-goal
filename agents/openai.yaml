@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discussion to Goal"
+  short_description: "Turn discussions into verifiable goals and start work"
+  default_prompt: "Use $discussion-to-goal to turn our discussion into a plan and a verifiable Goal, then set it and start the authorized work."
