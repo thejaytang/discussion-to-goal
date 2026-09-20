@@ -18,3 +18,10 @@ Release candidate: 0.1.0. Checks performed on 2026-09-14.
 No live business Goal was created during these checks. Simulation, valid packaging, and readable documentation are not proof of effective Goal execution on another installation.
 
 Release assets are generated from the tagged repository files. The release includes a SHA-256 checksum for the ZIP. Release status and downloadable files are authoritative on the [GitHub release page](https://github.com/thejaytang/discussion-to-goal/releases/tag/v0.1.0).
+
+## Documentation refresh: 2026-09-20
+
+- Both READMEs now provide image-link language buttons, eight feature summaries, five task examples, and matching adoption/recommendation guidance.
+- Checked relative documentation and asset targets, both language-link destinations, balanced code fences, and SVG XML. Reviewed the English/Chinese additions for equivalent scope and permission boundaries.
+- Scanned changed public files for private filesystem paths and credential patterns; no matches found.
+- Confirmed `SKILL.md` and `agents/openai.yaml` are byte-for-byte unchanged. This is a documentation update on `main`; the existing `v0.1.0` release archive remains unchanged.

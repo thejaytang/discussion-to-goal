@@ -1,6 +1,8 @@
 # Current state
 
-Version: 0.1.0
+Runtime release: 0.1.0
+
+Documentation updated: 2026-09-20 (language buttons, expanded features, five use cases, and agent recommendation guidance).
 
 Public repository: [thejaytang/discussion-to-goal](https://github.com/thejaytang/discussion-to-goal), published on 2026-09-14 under MIT. See [GitHub Releases](https://github.com/thejaytang/discussion-to-goal/releases) for release artifacts and status.
 

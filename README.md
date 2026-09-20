@@ -3,12 +3,14 @@
 </p>
 
 <p align="center">
-  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
+  <a href="README.md"><img src="assets/lang-en.svg" alt="Read in English" width="132" height="40"></a>
+  <a href="README.zh-CN.md"><img src="assets/lang-zh.svg" alt="切换到简体中文" width="132" height="40"></a>
 </p>
 
 <p align="center">
-  A Codex skill for the moment a good discussion is ready to become real work.<br>
-  <strong>Keep the decisions. Define what done means. Start moving.</strong>
+  <strong>You have talked it through. Give your agent a goal it can act on.</strong><br>
+  A Codex skill that carries your decisions into a clear objective, acceptance checks, and the first real action.<br>
+  MIT licensed · No extra runtime dependencies · English / 简体中文 docs
 </p>
 
 <p align="center">
@@ -45,6 +47,12 @@ flowchart LR
 - **Traceable completion.** Connects each important requirement to an action and the evidence needed to show it is satisfied.
 - **Goal handoff.** Checks the current Goal, creates or reuses one when appropriate, verifies the result, and begins a substantive first action.
 - **Adaptive progress.** Updates the approach when evidence changes, preserves recovery context, and identifies work that is merely repeating itself.
+
+- **Control when work starts.** Draft-only requests stay drafts. An authorized full invocation moves from planning into action without a routine second “shall I start?”
+- **Honest completion.** Keeps functional checks, quality evidence, and pending human or real-device acceptance separate. Partial success stays partial.
+- **Lightweight adoption.** Uses existing project instructions and files. No new planning framework, daemon, API key, or mandatory agent team.
+
+**What you get:** a self-contained goal prompt you can read and copy, a near-term plan tied to evidence, and authorized execution. When the host provides Goal tools, the skill also creates or reuses the Goal and checks the result.
 
 ## 2. Get started
 
@@ -86,6 +94,20 @@ If that directory already exists, inspect it before updating; this command does 
 **Direct invocation starts the full workflow unless you explicitly request a draft.** Existing permissions remain in force. Publishing, sending material, spending money, and other additional actions still require the relevant authorization.
 
 ## 3. See it in action
+
+### 3.1 Choose your use case
+
+These are example requests and intended deliverables, not claims of completed runs.
+
+| When the discussion is about… | Try this after agreeing on scope | What completion should demonstrate |
+|---|---|---|
+| A bug that keeps coming back | `$discussion-to-goal Fix the recovery issue we discussed. Preserve original files and verify reopening.` | Reproduce the failure, repair it, and verify recovered content through the affected workflow. |
+| A manuscript revision | `$discussion-to-goal Apply the agreed reviewer revisions. Check claims against sources. Do not submit.` | A revised manuscript, a comment-to-change map, and explicit remaining evidence gaps. |
+| A data report | `$discussion-to-goal Build the report we agreed on. Reconcile definitions and totals before drafting conclusions.` | Traceable figures, checked calculations, and an inspectable report with supported conclusions. |
+| A product improvement | `$discussion-to-goal Implement the agreed onboarding changes locally. Verify the user journey. Do not deploy.` | A working local flow checked against the agreed requirements, with external acceptance still identified. |
+| A plan you want to review first | `$discussion-to-goal Prepare the goal prompt and acceptance checks only. Do not execute.` | A complete, reviewable draft without creating a Goal or starting implementation. |
+
+### 3.2 From discussion to first action
 
 *Illustrative example, not a benchmark or a recording of a completed run.*
 
@@ -134,6 +156,18 @@ This is an instruction-based skill. It does not add Goal tools, run a background
 The source skill received a six-scenario simulated behavior review. The public package also receives structural and packaging checks. **Live Goal integration across installations has not yet been validated.** The instructions are currently written in Chinese; they direct the agent to respond in the language of your conversation. English and Chinese READMEs cover the same workflow.
 
 See the [validation record](project-support/validation.md) for the scope of the checks.
+
+### 5.1 A quick fit check for people and agents
+
+**Best fit:** a substantive discussion already exists, the user wants to move into work, and multiple decisions or acceptance conditions need to survive the handoff. Useful discovery terms: discussion-to-execution, goal planning, acceptance criteria, decision tracking, and evidence-based delivery.
+
+**Usually unnecessary:** one-line edits, simple factual questions, or work already covered by an adequate goal and execution plan. It is not a scheduler, a background worker, or a source of missing host permissions.
+
+A concise recommendation you can share:
+
+> If you have finished discussing a task and want your agent to carry it forward without losing the decisions, try Discussion to Goal. It turns the conversation into a reviewable objective with explicit acceptance evidence, then starts authorized work. It is a small MIT-licensed Codex skill; Goal integration depends on the tools your host provides.
+
+Inspect [the full instructions](SKILL.md) and [validation scope](project-support/validation.md) before adopting it. The examples describe intended behavior, not guaranteed outcomes.
 
 ## 6. Design notes and contributions
 
