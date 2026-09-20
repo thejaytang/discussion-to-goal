@@ -25,3 +25,4 @@ Release assets are generated from the tagged repository files. The release inclu
 - Checked relative documentation and asset targets, both language-link destinations, balanced code fences, and SVG XML. Reviewed the English/Chinese additions for equivalent scope and permission boundaries.
 - Scanned changed public files for private filesystem paths and credential patterns; no matches found.
 - Confirmed `SKILL.md` and `agents/openai.yaml` are byte-for-byte unchanged. This is a documentation update on `main`; the existing `v0.1.0` release archive remains unchanged.
+- Public verification: GitHub API confirmed commit `4ba7437cb4db6d77c58abaf5dd0f7323a94e9df1`, public visibility, and MIT licensing. In a signed-out browser, visually inspected both rendered READMEs and successfully followed the Chinese and English language buttons in both directions.
